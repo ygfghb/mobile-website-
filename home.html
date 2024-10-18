@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked n' Delight - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .media {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .media video {
+            flex: 2;
+            max-width: 200%;
+        }
+        .media .side-content {
+            flex: 1;
+            max-width: 300px;
+            margin-left: 20px;
+        }
+        .media .side-content img {
+            width: 100%;
+            height: auto;full
+        }
+        .media .side-content audio {
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .media {
+                flex-direction: column;
+            }
+            .media .side-content {
+                margin-left: 20;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Bakery Delight</h1>
+            <nav class="navbar">
+                <a href="home.html" class="active">Home</a>
+                <a href="bread.html">Bread</a>
+                <a href="pasteries.html">Pastries</a>
+                <a href="pies&tarts.html">Pies & Tarts</a>
+                <a href="muffins.html">Muffins</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="cakes.html">Cakes</a>                
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    &#9776;
+                </a>
+            </nav>
+        </div>
+    </header>
+    <section class="home">
+        <div class="container">
+/* Custom styles for headers to add space */
+        .header h1, .piestarts h2 {
+            margin-bottom: 20px; /* Add space below headers *
+            <h2>Welcome to Baked n' Delight<3</h2>
+            <p>Freshly baked goods just for you!</p>
+        </div>
+    </section>
+
+    <section class="media">
+        <div class="container">
+
+            <h2>Video</h2>
+            <video controls width="400" height="300">
+                <source src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Audio Player</h2>
+            <audio controls>
+                <source src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Baked n' Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementsByClassName("navbar")[0];
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

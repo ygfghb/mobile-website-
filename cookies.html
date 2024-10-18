@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked n' Delight - Cookies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Baked n' Delight</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="bread.html">Bread</a></li>
+                    <li><a href="pasteries.html">Pasteries</a></li>
+                    <li><a href="pies&tarts.html">Pies&Tarts</a></li>
+                    <li><a href="muffins.html">Muffins</a></li>
+                    <li><a href="cookies.html" class="active">Cookies</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    &#9776;
+                </a>
+            </nav>
+        </div>
+ 
+    </header>
+ /* Custom styles for headers to add space */
+        .header h1, .piestarts h2 {
+            margin-bottom: 20px; /* Add space below headers */
+    <section class="cookies">
+        <div class="container">
+            <h2>Our Cookies<3</h2>
+            <p>Delight in our assortment of scrumptious cookies.</p>
+        </div>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table with Images, Descriptions, Prices, and Add to Cart</title>
+    <style>
+        /* CSS for table styling */
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Add horizontal scroll if content overflows */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .product-image {
+            max-width:200px;
+            max-height: 200px;
+        }
+
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\cookie1.jpg" alt="cookie"></th>
+                <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\cookie2.jpg" alt="bread" class="product-image"></th>
+                <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\cookie3.jpg" alt="Image 3" class="product-image"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amazing freshly made cookies</td>
+                <td>Amazing freshly made cookies</td>
+                <td>Amazing freshly made cookies</td>
+            </tr>
+            <tr>
+                <td>£5.00</td>
+                <td>£5.00</td>
+                <td>£5.00</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart-button">Add to Cart</button></td>
+                <td><button class="add-to-cart-button">Add to Cart</button></td>
+                <td><button class="add-to-cart-button">Add to Cart</button></td>
+            </tr>
+        </tbody>
+    </table>
+<table>
+        <thead>
+                <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\cookie4.jpg" alt="cookie"></th>
+                <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\cookie5.jpg" alt="bread" class="product-image"width="100" height="100"></th>
+                <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\cookie 6.jpg" alt="Image 3" class="product-image"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>                
+                <td>Amazing freshly made cookies</td>
+                <td>Amazing freshly made cookies</td>
+                <td>Amazing freshly made cookies</td>
+
+            </tr>
+            <tr>
+                <td>£5.00</td>
+                <td>£5.00</td>
+                <td>£5.00</td>
+            </tr>
+            <tr>
+                <td><button class="add-to-cart-button">Add to Cart</button></td>
+                <td><button class="add-to-cart-button">Add to Cart</button></td>
+                <td><button class="add-to-cart-button">Add to Cart</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Baked n' Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementsByClassName("navbar")[0];
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

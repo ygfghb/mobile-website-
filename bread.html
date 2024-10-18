@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Delight - Bread</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .header {
+            background-color: #f8b400;
+            padding: 15px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a.active {
+            background-color: #f8b400;
+        }
+
+        /* Mobile Menu (hidden by default, displayed as hamburger icon) */
+        .navbar a.icon {
+            display: none;
+        }
+
+        /* Bread Section */
+        .bread {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .bread h2 {
+            color: #333;
+            font-size: 2em;
+        }
+
+        .bread p {
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        /* Table Styling */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a.icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar a {
+                display: block;
+                text-align: left;
+                padding: 12px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .table-container {
+                overflow-x: auto; /* Allow horizontal scrolling for tables on smaller screens */
+            }
+
+            .add-to-cart-button {
+                padding: 10px 14px;
+            }
+
+            .bread h2 {
+                font-size: 1.5em;
+            }
+
+            .bread p {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .navbar a {
+                padding: 10px 5px;
+            }
+
+            .bread h2 {
+                font-size: 1.3em;
+            }
+
+            .bread p {
+                font-size: 0.9em;
+            }
+
+            .add-to-cart-button {
+                padding: 8px 10px;
+            }
+
+            .product-image {
+                max-width: 80px;
+                max-height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Bakery Delight</h1>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="bread.html" class="active">Bread</a>
+                <a href="pasteries.html">Pastries</a>
+                <a href="pies&tarts.html">Pies&Tarts</a>
+                <a href="muffins.html">Muffins</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="cakes.html">Cakes</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bread">
+        <div class="container">
+            <h2>Our Bread &hearts;</h2>
+            <p>Discover our wide variety of freshly baked breads.</p>
+        </div>
+    </section>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="images/bread1.jpg" alt="Bread 1" class="product-image"></th>
+                    <th><img src="images/bread2.jpg" alt="Bread 2" class="product-image"></th>
+                    <th><img src="images/bread3.jpg" alt="Bread 3" class="product-image"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amazing freshly made bread</td>
+                    <td>Amazing freshly made bread</td>
+                    <td>Amazing freshly made bread</td>
+                </tr>
+                <tr>
+                    <td>£5.00</td>
+                    <td>£5.00</td>
+                    <td>£5.00</td>
+                </tr>
+                <tr>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="images/bread4.jpg" alt="Bread 4" class="product-image"></th>
+                    <th><img src="images/bread5.jpg" alt="Bread 5" class="product-image"></th>
+                    <th><img src="images/bread6.jpg" alt="Bread 6" class="product-image"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amazing freshly made bread</td>
+                    <td>Amazing freshly made bread</td>
+                    <td>Amazing freshly made bread</td>
+                </tr>
+                <tr>
+                    <td>£5.00</td>
+                    <td>£5.00</td>
+                    <td>£5.00</td>
+                </tr>
+                <tr>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Bakery Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.querySelector(".navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

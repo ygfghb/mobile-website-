@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked n' Delight - Pies & Tarts</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS for table styling */
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Add horizontal scroll if content overflows */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .product-image {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Baked n' Delight</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="bread.html">Bread</a></li>
+                    <li><a href="pasteries.html">Pasteries</a></li>
+                    <li><a href="pies&tarts.html" class="active">Pies & Tarts</a></li>
+                    <li><a href="muffins.html">Muffins</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    &#9776;
+                </a>
+            </nav>
+        </div>
+    </header>
+ /* Custom styles for headers to add space */
+        .header h1, .piestarts h2 {
+            margin-bottom: 20px; /* Add space below headers */
+    <section class="piestarts">
+        <div class="container">
+            <h2>Our Pies & Tarts<3</h2>
+            <p>Enjoy our delectable range of pies and tarts.</p>
+        </div>
+    </section>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\pie4.jpg" alt="Pie 1" class="product-image"></th>
+                    <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\pie1.jpg" alt="Pie 2" class="product-image"></th>
+                    <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\pie2.jpg" alt="Tart 1" class="product-image"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Delicious apple pie</td>
+                    <td>Sweet cherry pie</td>
+                    <td>Fresh fruit tart</td>
+                </tr>
+                <tr>
+                    <td>£8.00</td>
+                    <td>£9.00</td>
+                    <td>£7.50</td>
+                </tr>
+                <tr>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\pie3.jpg" alt="Tart 2" class="product-image"></th>
+                    <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\pie5.jpg" alt="Pie 3" class="product-image"></th>
+                    <th><img src="C:\Users\25292794\OneDrive - Newham College of Further Education\year 1\unit 6\website developmemnt\images\pie6.jpg" alt="Tart 3" class="product-image"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chocolate tart</td>
+                    <td>Pecan pie</td>
+                    <td>Lemon tart</td>
+                </tr>
+                <tr>
+                    <td>£6.50</td>
+                    <td>£10.00</td>
+                    <td>£6.00</td>
+                </tr>
+                <tr>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                    <td><button class="add-to-cart-button">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Baked n' Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementsByClassName("navbar")[0];
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
+

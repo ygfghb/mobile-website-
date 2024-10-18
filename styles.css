@@ -1,0 +1,171 @@
+body {
+    background-color: #f0f0f0; /* apricot */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #FFA500;
+    color: apricot;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: orange;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+.home, .bread, .pastries, .piestarts, .muffins, .cookies, .contact {
+    padding: 70px 0 50px; /* Adjusted to compensate for fixed header */
+    text-align: center;
+}
+
+.footer {
+    background-color: #FFA500;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .navbar .icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .navbar ul li a {
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    border: 2px solid #ddd; /* Add border to the table */
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd; /* Add borders to table cells */
+    padding: 8px;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-table tr:hover {
+    background-color: #ddd;
+}
+
+.product-table .product-image {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.product-table td button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-table td button:hover {
+    background-color: #45a049;
+}
+.media video {
+    width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+.media .audio-container {
+    width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+.media .audio-container audio {
+    width: 100%;
+    height: 100%; /* Fill the container height */
+}
+.media .video-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.media .video-container video {
+    max-width: 100%; /* Ensure the video doesn't exceed its container */
+    max-height: 100%; /* Ensure the video doesn't exceed its container */
+}
+
